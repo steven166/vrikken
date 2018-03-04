@@ -1,0 +1,10 @@
+<div class="counter-container">
+  <h1>Bieden</h1>
+  <div class="value-label">{{getValue()}}</div>
+  <button class="add" (click)="add()">+</button>
+  <button class="remove" (click)="remove()" [disabled]="!canRemove(getValue())">-</button>
+  <button class="bied" (click)="doBied()" [disabled]="!canBied(getValue())">Bied</button>
+  <template [ngIf]="mayPass">
+    <button class="pass" (click)="doPass()">Pass</button>
+  </template>
+</div>

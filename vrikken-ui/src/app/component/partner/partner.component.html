@@ -1,0 +1,10 @@
+<opposite-component [room]="room" [user]="user"></opposite-component>
+<template [ngIf]="isTurn()">
+  <div class="box">
+    <h2>Choose your companion</h2>
+    <div class="card-container">
+      <card-component [small]="true" [card]="card" *ngFor="let card of getCards()" (click)="chooseCard(card)"></card-component>
+    </div>
+  </div>
+</template>
+<hand-component [cards]="getUser().cards"></hand-component>

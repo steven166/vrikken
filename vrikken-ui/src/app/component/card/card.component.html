@@ -1,0 +1,20 @@
+<div class="card-container" [class.small]="small">
+  <div class="card">
+    <div class="index-label upper-left" [ngClass]="{hearts: isHearts(), spades: isSpades(), diamonds: isDiamonds(), clubs: isClubs()}">
+      <span>{{getIndex()}}</span>
+      <img class="type-label" [src]="getTypeSrc()"/>
+    </div>
+    <div class="index-label upper-right" [ngClass]="{hearts: isHearts(), spades: isSpades(), diamonds: isDiamonds(), clubs: isClubs()}">
+      <span>{{getIndex()}}</span>
+      <img class="type-label" [src]="getTypeSrc()"/>
+    </div>
+    <div class="index-label bottom-left" [ngClass]="{hearts: isHearts(), spades: isSpades(), diamonds: isDiamonds(), clubs: isClubs()}">
+      <span>{{getIndex()}}</span>
+      <img class="type-label" [src]="getTypeSrc()"/>
+    </div>
+    <div class="index-label bottom-right" [ngClass]="{hearts: isHearts(), spades: isSpades(), diamonds: isDiamonds(), clubs: isClubs()}">
+      <span>{{getIndex()}}</span>
+      <img class="type-label" [src]="getTypeSrc()"/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="joining-box">
+  <h1>Joining</h1>
+  <ol>
+    <li *ngFor="let u of room.users">{{u.username}}</li>
+  </ol>
+  <button (click)="startRoom()">Start</button>
+</div>

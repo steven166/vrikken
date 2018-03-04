@@ -1,0 +1,5 @@
+<div class="opposite-container">
+  <div class="opposite-box" *ngFor="let u of room.users | sortAndFilterOpposites:getUser().username" [class.turn]="u.turn" [class.pass]="u.pass">
+    {{u.username}}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vrikken.iml" filepath="$PROJECT_DIR$/vrikken.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vrikken-server/vrikken-server.iml" filepath="$PROJECT_DIR$/vrikken-server/vrikken-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vrikken-ui/vrikken-ui.iml" filepath="$PROJECT_DIR$/vrikken-ui/vrikken-ui.iml" />
+    </modules>
+  </component>
+</project>

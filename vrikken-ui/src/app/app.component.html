@@ -1,0 +1,24 @@
+<user-component [user]="user" [room]="room"></user-component>
+<template [ngIf]="room">
+  <template [ngIf]="room.status === 'joining'">
+    <joining-component [room]="room"></joining-component>
+  </template>
+  <template [ngIf]="room.status === 'bieding'">
+    <bieding-component [room]="room" [user]="user"></bieding-component>
+  </template>
+  <template [ngIf]="room.status === 'partner'">
+    <partner-component [room]="room" [user]="user"></partner-component>
+  </template>
+  <template [ngIf]="room.status === 'showing'">
+    <showing-component [room]="room" [user]="user"></showing-component>
+  </template>
+  <!--<template *ngIf="room.status === 'playing'">-->
+    <!--<playing-component [room]="room"></playing-component>-->
+  <!--</template>-->
+  <!--<template *ngIf="room.status === 'finished'">-->
+    <!--<finished-component [room]="room"></finished-component>-->
+  <!--</template>-->
+</template>
+<!--<template *ngIf="!room">-->
+  <!--<joining-component></joining-component>-->
+<!--</template>-->

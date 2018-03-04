@@ -1,0 +1,14 @@
+<opposite-component [room]="room" [user]="user"></opposite-component>
+<hand-component [cards]="getUser().cards"></hand-component>
+<h3>Roem: {{room.playingCamp.roem}}, geboden: {{room.bod}}</h3>
+<div class="playing-user">
+  <h5>Player: {{getPlayingUser().username}}</h5>
+  <card-component *ngFor="let card of getPlayingUser().cards | showCardsFilter:false" [card]="card" [small]="true"></card-component>
+</div>
+<div class="partner">
+  <h5>Partner: {{getPartner().username}}</h5>
+  <card-component *ngFor="let card of getPartner().cards | showCardsFilter:true" [card]="card" [small]="true"></card-component>
+</div>
+<div class="start-box" *ngIf="!getUser().started">
+  <button class="button" (click)="start()">Start</button>
+</div>

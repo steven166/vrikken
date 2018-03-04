@@ -1,0 +1,32 @@
+
+.opposite-container{
+  text-align: center;
+}
+
+.opposite-box{
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+  margin: 0 20px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #2196f3;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 6px 0px;
+}
+
+.opposite-box.pass{
+  background-color: #F44336;
+}
+
+.opposite-box.turn{
+  background-color: #FF9800;
+}
+
+@media (max-width: 500px){
+  .opposite-box{
+    width: 100px;
+    margin: 0 5px;
+  }
+}

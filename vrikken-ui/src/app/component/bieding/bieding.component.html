@@ -1,0 +1,5 @@
+<opposite-component [room]="room" [user]="user"></opposite-component>
+<template [ngIf]="getUser().turn">
+  <counter-component [value]="getBod(room.bod)" [mayPass]="room.bod" (bied)="onBied($event)" (pass)="onPass()"></counter-component>
+</template>
+<hand-component [cards]="getUser().cards"></hand-component>

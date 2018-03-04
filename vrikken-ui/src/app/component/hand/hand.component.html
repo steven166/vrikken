@@ -1,0 +1,4 @@
+<div class="hand">
+  <card-component class="card" *ngFor="let card of cards| sortHand; let i = index" [style.right.px]="i*30-70" [style.z-index]="cards.length-i" [card]="card" [class.selected]="isSelected(card)" (click)="cardClick(card)"></card-component>
+  <!--<card-component class=""></card-component>-->
+</div>

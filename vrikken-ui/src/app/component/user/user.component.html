@@ -1,0 +1,11 @@
+<div class="bottom-bar" [class.turn]="getTurn()" [class.pass]="getPass()">
+  <template [ngIf]="user">
+    <div class="user-box">
+      {{user.username}}
+    </div>
+    <template [ngIf]="room">
+      <div class="room-label">Room: {{room.roomNumber}}</div>
+      <button class="leave-button" (click)="leave()">Leave</button>
+    </template>
+  </template>
+</div>

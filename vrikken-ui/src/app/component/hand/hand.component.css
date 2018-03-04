@@ -1,0 +1,17 @@
+.hand{
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  height: 200px;
+  width: 100%;
+}
+
+.card{
+  position: absolute;
+  bottom: -30px;
+  transition: 0.2s ease bottom;
+}
+
+.card.selected{
+  bottom: 10px;
+}

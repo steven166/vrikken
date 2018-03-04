@@ -1,0 +1,80 @@
+.card-container{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 180px;
+}
+
+.card {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 180px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 6px 0px;
+}
+
+.card-container.small{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 90px;
+}
+
+.card-container.small .card{
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  left: 0;
+}
+
+.index-label span {
+  position: absolute;
+  padding: 0 5px;
+}
+
+.index-label img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.index-label.upper-left span{
+  top: 5px;
+  left: 5px;
+}
+
+.index-label.upper-left img{
+  top: 25px;
+  left: 5px;
+}
+
+.index-label.upper-right span{
+  top: 5px;
+  right: 5px;
+}
+
+.index-label.upper-right img{
+  top: 25px;
+  right: 5px;
+}
+
+.index-label.bottom-left span{
+  bottom: 5px;
+  left: 5px;
+}
+
+.index-label.bottom-left img{
+  bottom: 25px;
+  left: 5px;
+}
+
+.index-label.bottom-right span{
+  bottom: 5px;
+  right: 5px;
+}
+
+.index-label.bottom-right img{
+  bottom: 25px;
+  right: 5px;
+}
